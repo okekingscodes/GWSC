@@ -36,7 +36,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #465b52;
+  color: #141414;
   margin: 15px 0 20px 0;
 }
 
@@ -71,6 +71,9 @@ button.white {
   outline: none;
   transition: 0.2s;
 }
+button a {
+  color: #fff;
+}
 
 body {
   width: 100%;
@@ -100,7 +103,7 @@ body {
 }
 /*---Navbar---*/
 .logo {
-  width: 100px;
+  width: 80px;
 }
 #navbar {
   display: flex;
@@ -151,13 +154,13 @@ left: 20px;
     padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
     outline: none;
     border: none;
     width: 400px;
-    padding: 10px 5px;
+    padding: 15px 5px;
     border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
   }
 
 /*---------Image slideshow style--------------*/
@@ -259,7 +262,7 @@ left: 20px;
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 h1 {
     font-size: 35px;
@@ -317,6 +320,9 @@ h3 {
     .row {
         flex-direction: column;
     }
+    .mySlides img {
+      height: 300px;
+  }
 }
 
 /*------Students Section style------*/
@@ -370,7 +376,7 @@ h3 {
 .facilities {
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 70px;
     text-align: center;
 }
 .facilities-col {
@@ -471,57 +477,57 @@ h3 {
 
 /*------------FOOTER------------------*/
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  footer .col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  footer .logo {
-    margin-bottom: 30px;
-  }
-  footer h4 {
-    font-size: 14px;
-    padding-bottom: 20px;
-  }
-  footer p {
-    font-size: 13px;
-    margin: 0 0 8px 0;
-  }
-  footer a {
-    font-size: 13px;
-    text-decoration: none;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  footer .follow {
-    margin-top: 20px;
-  }
-  footer .follow i {
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-  }
-  footer .follow i:hover,
-  footer a:hover {
-    color: #088178;
-    transition: 0.5s ease;
-  }
-  footer .install .row img {
-    border: 1px solid #088178;
-    border-radius: 6px;
-  }
-  footer .install img {
-    margin: 10px 0 15px 0;
-  }
-  footer .copyright {
-    width: 100%;
-    text-align: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #222;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+  transition: 0.5s ease;
+}
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
   #close  {
     display: none;
   }
@@ -529,23 +535,31 @@ footer {
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
+      .topnav input[type=text] {
       float: none;
       display: block;
       text-align: left;
-      width: 100%;
+      width: 150px;
       margin: 0;
-      padding: 14px;
+      padding: 8px 10px;
     }
     .topnav input[type=text] {
       border: 1px solid #ccc;
+    }
+    .logo {
+      width: 50px;
+      margin-right: 10px;
+    }
+    .book_btn {
+      font-size: 10px;
+      padding: 8px 6px;
     }
   }
 
   /*-  ----------MEDIA QUERY-----------------*/
   @media (max-width: 799px) {
     .section-p1 {
-      padding: 40px 40px;
+      padding: 30px 40px;
     }
     #navbar {
       display: flex;
@@ -588,16 +602,12 @@ footer {
     #lg-bag {
       display: none;
     }
-    #hero {
-      height: 70vh;
-      padding: 0 80px;
-      background-position: top 30% right 30%;
-    }
+    
     h1 {
-      font-size: 40px;
+      font-size: 25px;
     }
     h2 {
-      font-size: 40px;
+      font-size: 20px;
     }
     /*------Contact Page----------*/
     #form-details {
@@ -610,23 +620,23 @@ footer {
   
   @media (max-width: 477px) {
     .section-p1 {
-      padding: 20px;
+      padding: 10px;
     }
     #header {
       padding: 10px 30px;
     }
     h1 {
-      font-size: 38px;
+      font-size: 25px;
     }
     h2 {
-      font-size: 32px;
+      font-size: 20px;
     }
-    #hero {
-      padding: 0 20px;
-      background-position: 55%;
+    .mySlides img {
+      width: 100%;
     }
+
     footer .copyright {
-      text-align: start;
+      text-align: center;
     }
 
 /*-------About page-------------*/
@@ -808,15 +818,54 @@ footer {
     margin-top: 7%;
     margin-bottom: 7%;
 }
-.login-form {
+.login-form,
+.book-form {
     background: #f2f2f2;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     text-align: center;
 }
+.book-form h2 {
+  font-size: 25px;
+}
+.book-form button {
+  width: 100%;
+  background: #088178;
+  color: #fff;
+  font-size: 20px;
+}
+.book-form #check-in,
+.book-form #check-out {
+  width: 90%;
+}
 
-.login-form input {
+/* Styling for the popup overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+/* Styling for the booking popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.login-form input,
+.book-form input {
     display: block;
     margin: 35px 20px;
     border: none;
